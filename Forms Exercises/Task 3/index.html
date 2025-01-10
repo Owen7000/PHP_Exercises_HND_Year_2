@@ -3,16 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
+    <title>Smoothies</title>
 </head>
 <body>
-    <h1><em>NOT FINISHED</em></h1>
-    <h1>Payment</h1>
+    <form action="orderSmoothie.php" method="GET">
+        <fieldset>
+            <legend>Smoothie Choices</legend>
+            <label for="fruit1">Choose fruit 1:</label>
+            <select id="fruit1" name="fruit1">
+            <option value="bannana">Bannana</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="strwaberry">Strawberry</option>
+            <option value="peach">Peach</option>
+            <option value="mango">Mango</option>
+            </select><br>
 
-    <form action="" method="GET">
-        <label for="paymentMethod">How would you like to pay for your smoothie: </label>
+            <label for="fruit2">Choose fruit 2:</label>
+            <select id="fruit2" name="fruit2">
+            <option value="bannana">Bannana</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="strwaberry">Strawberry</option>
+            <option value="peach">Peach</option>
+            <option value="mango">Mango</option>
+            </select><br>
 
-        <input type="submit" value="Submit">
+            <label for="fruit3">Choose fruit 3:</label>
+            <select id="fruit3" name="fruit3">
+            <option value="bannana">Bannana</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="strwaberry">Strawberry</option>
+            <option value="peach">Peach</option>
+            <option value="mango">Mango</option>
+            </select><br>
+
+            <label for="size">Choose a size:</label>
+            <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            </select><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment</legend>
+        
+            <input type="radio" id="paypal" name="paymentMethod" value="PayPal" required>
+            <label for="paypal">PayPal</label><br>
+
+            
+            <input type="radio" id="credit-debit" name="paymentMethod" value="Credit/Debit Card">
+            <label for="credit-debit">Credit/Debit Card</label><br>
+
+            <input type="radio" id="c-o-d" name="paymentMethod" value="Cash on Delivery">
+            <label for="c-o-d">Cash on Delivery</label><br>
+        </fieldset>
+
+        <br><input type="submit" value="Order Smoothie">
     </form>
 </body>
 </html>
